@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Usługi Księgowe MIŁO Miłosz Jura — księgowość, kadry i płace oraz szkolenia księgowe.">
+  <meta name="theme-color" content="#171733">
+  <meta property="og:title" content="Usługi Księgowe MIŁO | Miłosz Jura">
+  <meta property="og:description" content="Księgowość, kadry i płace oraz praktyczne szkolenia księgowe.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/logo/milo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Usługi Księgowe MIŁO | Miłosz Jura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/logo/milo.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/main.js" defer></script>
+  <script src="./js/form.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="Usługi Księgowe MIŁO — strona główna">
+      <img src="./assets/logo/milo.jpg" alt="Logo Usługi Księgowe MIŁO" width="72" height="96">
+      <span>Usługi Księgowe MIŁO</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Główna nawigacja">
+      <a href="#start">Start</a>
+      <a href="#uslugi">Usługi</a>
+      <a href="#o-mnie">O mnie</a>
+      <a href="#szkolenia">Szkolenia</a>
+      <a href="#oferta">Zapytaj o ofertę</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="start" class="hero">
+      <div class="container">
+        <p class="eyebrow">Usługi Księgowe MIŁO</p>
+        <h1>Księgowość dopasowana do Twojej firmy — MIŁO prawda?</h1>
+        <p>Kompleksowa księgowość, kadry i płace oraz praktyczne szkolenia z Comarch ERP Optima.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#oferta">Zapytaj o ofertę</a>
+          <a class="button button-secondary" href="#uslugi">Poznaj ofertę</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="uslugi" class="section">
+      <div class="container">
+        <p class="eyebrow">Zakres wsparcia</p>
+        <h2>Usługi</h2>
+        <div class="card-grid">
+          <article class="card"><h3>Księgowość</h3><p>KPiR, ryczałt ewidencjonowany i pełna księgowość.</p></article>
+          <article class="card"><h3>Kadry i płace</h3><p>Kompleksowa obsługa pracowników i zleceniobiorców.</p></article>
+          <article class="card"><h3>Szkolenia i konsultacje</h3><p>Comarch ERP Optima, SaldeoSmart i indywidualne konsultacje.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="o-mnie" class="section section-light">
+      <div class="container about-grid">
+        <img src="./assets/images/milosz.jpg" alt="Miłosz Jura" width="800" height="800" loading="lazy">
+        <div><p class="eyebrow">Poznajmy się</p><h2>O mnie</h2><p>Nazywam się Miłosz Jura i od ponad 10 lat działam na rynku jako księgowy.</p><p>Jestem magistrem finansów i rachunkowości UEP Poznań. Wspieram klientów w kompleksowej obsłudze księgowości, kadr i płac.</p></div>
+      </div>
+    </section>
+
+    <section id="szkolenia" class="section">
+      <div class="container"><p class="eyebrow">Praktyczna wiedza</p><h2>Szkolenia</h2><div class="card-grid"><article class="card"><h3>Comarch ERP Optima</h3><p>Obsługa wybranych modułów i e-Sprawozdań Finansowych.</p></article><article class="card"><h3>Schematy księgowe</h3><p>Automatyzacja księgowań dopasowana do firmy.</p></article><article class="card"><h3>JPK_KR_PD</h3><p>Znaczniki, RPD i prawidłowe oznaczanie zapisów.</p></article><article class="card"><h3>Bilans i RZiS</h3><p>Konfiguracja Bilansu oraz Rachunku Zysków i Strat.</p></article><article class="card"><h3>Konsultacja</h3><p>Rozwiązanie konkretnego problemu, dokumentu lub konfiguracji.</p></article></div></div>
+    </section>
+
+    <section id="oferta" class="section section-accent">
+      <div class="container form-layout">
+        <div><p class="eyebrow">Pierwszy krok</p><h2>Zapytaj o ofertę</h2><p>Zamierzasz założyć firmę? A może myślisz o zmianie obsługi? Wypełnij formularz, a przygotuję odpowiedź dopasowaną do Twojej sytuacji.</p></div>
+        <form id="quote-form" class="quote-form" action="https://formspree.io/f/xdekekye" method="post" data-endpoint="https://formspree.io/f/xdekekye" novalidate>
+          <div class="form-progress" aria-live="polite"><span id="form-step-label">Krok 1 z 4</span><span id="form-progress-value">25%</span></div>
+          <div class="progress-track"><span id="form-progress-bar"></span></div>
+
+          <fieldset class="form-step is-active" data-step="0">
+            <legend>O firmie</legend>
+            <label for="business-type">Forma działalności <span aria-hidden="true">*</span></label>
+            <select id="business-type" name="forma_dzialalnosci" required><option value="">Wybierz formę</option><option>JDG</option><option>Spółka osobowa (np. cywilna, jawna)</option><option>Spółka kapitałowa (sp. z o.o., akcyjna)</option><option>Stowarzyszenie</option><option>Fundacja</option><option>Wspólnota Mieszkaniowa</option><option>Inne</option></select>
+            <label for="tax-type">Forma opodatkowania <span aria-hidden="true">*</span></label>
+            <select id="tax-type" name="forma_opodatkowania" required><option value="">Najpierw wybierz formę działalności</option></select>
+            <label for="vat-status">Czynny podatnik VAT? <span aria-hidden="true">*</span></label>
+            <select id="vat-status" name="vat" required><option value="">Wybierz odpowiedź</option><option>Tak</option><option>Nie</option></select>
+            <label for="business-kind">Rodzaj działalności <span aria-hidden="true">*</span></label>
+            <select id="business-kind" name="rodzaj_dzialalnosci" required><option value="">Wybierz rodzaj</option><option>Usługowa</option><option>Handlowa</option><option>Produkcyjna</option></select>
+            <label for="start-date">Od kiedy firma działa lub planuje start? <span aria-hidden="true">*</span></label>
+            <input id="start-date" name="data_rozpoczecia" type="date" required>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="1" hidden>
+            <legend>Skala działalności</legend>
+            <label for="sales-invoices">Faktury sprzedaży miesięcznie <span aria-hidden="true">*</span></label>
+            <select id="sales-invoices" name="faktury_sprzedazy" required><option value="">Wybierz zakres</option><option>Do 50</option><option>51–100</option><option>101–200</option><option>Powyżej 200</option></select>
+            <label for="purchase-invoices">Faktury zakupowe miesięcznie <span aria-hidden="true">*</span></label>
+            <select id="purchase-invoices" name="faktury_zakupowe" required><option value="">Wybierz zakres</option><option>Do 50</option><option>51–100</option><option>101–200</option><option>Powyżej 200</option></select>
+            <label for="bank-operations">Operacje bankowe miesięcznie <span aria-hidden="true">*</span></label>
+            <select id="bank-operations" name="operacje_bankowe" required><option value="">Wybierz zakres</option><option>Do 50</option><option>51–100</option><option>101–200</option><option>Powyżej 200</option></select>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="2" hidden>
+            <legend>Dodatkowe informacje</legend>
+            <label for="foreign-transactions">Transakcje zagraniczne <span aria-hidden="true">*</span></label>
+            <select id="foreign-transactions" name="transakcje_zagraniczne" required><option value="">Wybierz odpowiedź</option><option>Tak – sprzedaż</option><option>Tak – zakup</option><option>Tak – sprzedaż i zakup</option><option>Nie</option></select>
+            <label for="foreign-currency">Transakcje w walutach obcych <span aria-hidden="true">*</span></label>
+            <select id="foreign-currency" name="waluty_obce" required><option value="">Wybierz odpowiedź</option><option>Tak</option><option>Nie</option></select>
+            <label for="cash-register">Kasa fiskalna <span aria-hidden="true">*</span></label>
+            <select id="cash-register" name="kasa_fiskalna" required><option value="">Wybierz odpowiedź</option><option>Tak</option><option>Nie</option></select>
+            <label for="employees">Pracownicy lub zleceniobiorcy <span aria-hidden="true">*</span></label>
+            <select id="employees" name="pracownicy" required><option value="">Wybierz zakres</option><option>Nie</option><option>Do 10</option><option>11–20</option><option>Powyżej 20</option></select>
+          </fieldset>
+
+          <fieldset class="form-step" data-step="3" hidden>
+            <legend>Kontakt</legend>
+            <label for="message">Dodatkowe informacje</label>
+            <textarea id="message" name="dodatkowe_informacje" rows="5" placeholder="Napisz, co jest dla Ciebie najważniejsze."></textarea>
+            <label for="email">E-mail <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="twoj@email.pl" required>
+            <p class="field-hint">Na ten adres możemy przesłać ofertę.</p>
+            <label class="consent"><input name="zgoda" type="checkbox" required><span>Wyrażam zgodę na przetwarzanie danych w celu obsługi mojego zapytania. <a href="./privacy.html">Polityka prywatności</a>.</span></label>
+          </fieldset>
+
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <p class="form-success" id="form-success" role="status" hidden>Dziękuję. Twoje zapytanie zostało wysłane.</p>
+          <div class="form-actions"><button class="button button-secondary form-back" type="button" hidden>Wstecz</button><button class="button button-primary form-next" type="button">Dalej</button><button class="button button-primary form-submit" type="submit" hidden>Wyślij zapytanie</button></div>
+        </form>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container"><p class="eyebrow">Kontakt</p><h2>Porozmawiajmy o Twojej firmie</h2><p><a href="tel:+48723839616">723 839 616</a></p><p><a href="mailto:ksiegowymilo@gmail.com">ksiegowymilo@gmail.com</a></p><p>Poznań</p><p><a href="https://www.instagram.com/ksiegowymilo">Instagram</a> · <a href="https://www.facebook.com/profile.php?id=61584766357540">Facebook</a></p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><p>Usługi Księgowe MIŁO Miłosz Jura · NIP 6222699848</p><p><a href="./privacy.html">Polityka prywatności</a></p></div></footer>
+</body>
+</html>
