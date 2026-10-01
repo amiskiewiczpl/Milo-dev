@@ -20,8 +20,6 @@ const aboutCarousel = document.querySelector('[data-about-carousel]');
 if (aboutCarousel) {
   const slides = [...aboutCarousel.querySelectorAll('[data-carousel-slide]')];
   const status = aboutCarousel.querySelector('[data-carousel-status]');
-  const previousButton = aboutCarousel.querySelector('[data-carousel-previous]');
-  const nextButton = aboutCarousel.querySelector('[data-carousel-next]');
   const toggleButton = aboutCarousel.querySelector('[data-carousel-toggle]');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let activeSlide = 0;
@@ -55,16 +53,6 @@ if (aboutCarousel) {
       scheduleNextSlide();
     }, 5000);
   };
-
-  previousButton.addEventListener('click', () => {
-    updateSlide(activeSlide - 1);
-    scheduleNextSlide();
-  });
-
-  nextButton.addEventListener('click', () => {
-    updateSlide(activeSlide + 1);
-    scheduleNextSlide();
-  });
 
   toggleButton.addEventListener('click', () => {
     isPaused = !isPaused;

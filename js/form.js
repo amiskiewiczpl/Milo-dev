@@ -245,16 +245,29 @@ if (quoteForm) {
 
   quoteForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-    if (!validateStep(steps[currentStep])) return;
+    if (currentStep !== steps.length - 1) return;
 
     const disabledSteps = steps.map((step) => step.disabled);
     steps.forEach((step) => {
       step.disabled = false;
     });
-    const formData = new FormData(quoteForm);
+    let firstInvalidStep = -1;
+    steps.some((step, index) => {
+      if (validateStep(step)) return false;
+      firstInvalidStep = index;
+      return true;
+    });
+    const formData = firstInvalidStep === -1 ? new FormData(quoteForm) : null;
     steps.forEach((step, index) => {
       step.disabled = disabledSteps[index];
     });
+    if (firstInvalidStep !== -1) {
+      currentStep = firstInvalidStep;
+      updateStep();
+      const firstInvalidField = steps[currentStep].querySelector('.is-invalid input:not(:disabled), input.is-invalid, select.is-invalid, textarea.is-invalid');
+      firstInvalidField?.focus();
+      return;
+    }
     formData.append('_subject', 'Nowe zapytanie ofertowe — Usługi Księgowe MIŁO');
     formData.append('_replyto', formData.get('email'));
     submitButton.disabled = true;
