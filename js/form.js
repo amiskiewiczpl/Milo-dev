@@ -34,6 +34,10 @@ if (quoteForm) {
     { value: 'CIT klasyczny', label: 'CIT klasyczny' },
     { value: 'CIT estoński', label: 'CIT estoński' }
   ];
+  const partnershipTaxOptions = [
+    { value: 'CIT klasyczny', label: 'CIT klasyczny' },
+    { value: 'CIT estoński', label: 'CIT estoński' }
+  ];
   const accountingOptions = {
     books: [
       { value: 'KPiR', label: 'Książka przychodów i rozchodów (KPiR)' },
@@ -48,7 +52,7 @@ if (quoteForm) {
     jdg: { activity: 'business', accounting: accountingOptions.books, tax: personalTaxOptions },
     civil: { activity: 'business', accounting: accountingOptions.books, tax: personalTaxOptions },
     capital: { activity: 'business', accounting: null, tax: companyTaxOptions },
-    limited: { activity: 'business', accounting: null, tax: companyTaxOptions },
+    limited: { activity: 'business', accounting: null, tax: partnershipTaxOptions },
     association: { activity: 'organization', accounting: accountingOptions.organization, tax: null },
     foundation: { activity: 'organization', accounting: accountingOptions.organization, tax: null },
     community: { activity: 'business', accounting: null, tax: null }
