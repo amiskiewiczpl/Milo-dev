@@ -25,6 +25,8 @@ h2 { font-size: clamp(2rem, 4vw, 3.5rem); margin: .5rem 0 2rem; }
 .button { display: inline-block; min-height: 44px; padding: .7rem 1.1rem; border: 1px solid transparent; text-decoration: none; font-weight: 800; }
 .button-primary { color: var(--ink); background: var(--cyan); }
 .button-secondary { color: var(--white); border-color: rgba(255,255,255,.7); }
+.form-back { color: var(--ink); background: var(--white); border-color: var(--line); }
+.form-back:hover:not(:disabled), .form-back:focus-visible:not(:disabled) { background: #f3f7ff; border-color: rgba(39,103,216,.5); }
 .section-light { background: var(--white); }
 .section-accent { color: var(--white); background: var(--ink); }
 .form-layout { display: grid; grid-template-columns: minmax(220px, .7fr) minmax(0, 1.3fr); gap: 3rem; align-items: start; }
