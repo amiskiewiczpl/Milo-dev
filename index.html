@@ -197,14 +197,20 @@
             <label for="business-type">Forma działalności <span aria-hidden="true">*</span></label>
             <select id="business-type" name="forma_dzialalnosci" required>
               <option value="">Wybierz formę</option>
-              <option value="JDG" data-business-profile="jdg">Jednoosobowa działalność gospodarcza (JDG)</option>
-              <option value="Spółka jawna" data-business-profile="jdg">Spółka jawna</option>
-              <option value="Spółka cywilna" data-business-profile="civil">Spółka cywilna</option>
-              <option value="Spółka kapitałowa (sp. z o.o., akcyjna)" data-business-profile="capital">Spółka kapitałowa (sp. z o.o., akcyjna)</option>
-              <option value="Spółka komandytowa" data-business-profile="limited">Spółka komandytowa</option>
-              <option value="Stowarzyszenie" data-business-profile="association">Stowarzyszenie</option>
-              <option value="Fundacja" data-business-profile="foundation">Fundacja</option>
-              <option value="Wspólnota mieszkaniowa" data-business-profile="community">Wspólnota mieszkaniowa</option>
+              <optgroup label="Spółki osobowe">
+                <option value="JDG" data-business-profile="jdg">Jednoosobowa działalność gospodarcza (JDG)</option>
+                <option value="Spółka jawna" data-business-profile="jdg">Spółka jawna</option>
+                <option value="Spółka cywilna" data-business-profile="civil">Spółka cywilna</option>
+                <option value="Spółka komandytowa" data-business-profile="limited">Spółka komandytowa</option>
+              </optgroup>
+              <optgroup label="Spółki kapitałowe">
+                <option value="Spółka kapitałowa (sp. z o.o., akcyjna)" data-business-profile="capital">Spółka kapitałowa (sp. z o.o., akcyjna)</option>
+              </optgroup>
+              <optgroup label="Pozostałe">
+                <option value="Stowarzyszenie" data-business-profile="association">Stowarzyszenie</option>
+                <option value="Fundacja" data-business-profile="foundation">Fundacja</option>
+                <option value="Wspólnota mieszkaniowa" data-business-profile="community">Wspólnota mieszkaniowa</option>
+              </optgroup>
             </select>
           </fieldset>
 
