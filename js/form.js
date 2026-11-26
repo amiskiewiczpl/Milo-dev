@@ -53,6 +53,7 @@ if (quoteForm) {
     civil: { activity: 'business', accounting: accountingOptions.books, tax: personalTaxOptions },
     capital: { activity: 'business', accounting: null, tax: companyTaxOptions },
     limited: { activity: 'business', accounting: null, tax: partnershipTaxOptions },
+    partnership: { activity: 'business', accounting: accountingOptions.books, tax: partnershipTaxOptions },
     association: { activity: 'organization', accounting: accountingOptions.organization, tax: null },
     foundation: { activity: 'organization', accounting: accountingOptions.organization, tax: null },
     community: { activity: 'business', accounting: null, tax: null }
@@ -73,6 +74,7 @@ if (quoteForm) {
     civil: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
     capital: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
     limited: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
+    partnership: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
     association: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
     foundation: ['Do 30', '31–50', '51–70', 'Powyżej 70'],
     community: ['Do 30', '31–50', '51–70', 'Powyżej 70']
